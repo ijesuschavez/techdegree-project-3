@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700,900&display=swap" rel="stylesheet">
+    <title>Online Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-header">
+        <h1>The Code Review</h1>
+      </div>
+      <div class="intro">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox.</p>
+      </div>
+      <hr class="hrone">
+      <hr class="hrtwo">
+    </header>
+
+    <form class="codereview" action="index.html" method="post">
+      <fieldset class="contact">
+        <legend>Contact Information</legend>
+
+        <div class="sec">
+          <label class="label" for="name">Full Name</label>
+          <input class="field"type="text" id="name" name="full_name" placeholder="Required">
+        </div>
+
+        <div class="sec">
+          <label class="label" for="email">Email Address</label>
+          <input class="field"type="email" id="email" name="email_address" placeholder="Required">
+        </div>
+
+        <div class="sec">
+          <label class="label" for="phone">Phone Number</label>
+          <input class="field" type="text" id="phone" name="phone_number">
+        </div>
+
+        <div class="sec">
+          <label class="label" for="address">Street Address</label>
+          <input class="field"type="text" id="address" name="street_address">
+        </div>
+
+        <div class="sec">
+          <label class="label" for="city">City</label>
+          <input class="field"type="text" id="city" name="home_city">
+        </div>
+
+        <div class="sec">
+          <label class="label" for="state">State</label>
+          <select class="states field" id="state" name="state">
+            <option value="choose" disabled selected>Choose State</option>
+            <option value="zona">Arizona</option>
+            <option value="cali">California</option>
+            <option value="chic">Chicago</option>
+            <option value="flor">Florida</option>
+            <option value="york">New York</option>
+          </select>
+        </div>
+
+        <div class="sec">
+          <label class="label lzip" for="zip">Zip Code</label>
+          <input class="field zip" type="text" id="zip" name="zip_code">
+        </div>
+
+
+      </fieldset>
+
+      <hr class="hrtwo">
+
+      <fieldset class="newsletter">
+
+        <legend>Newsletter</legend>
+        <label class="nl">Select the newsletter you would like to receive</label>
+
+        <div class="newstype">
+          <div class="check">
+            <input type="checkbox" id="html" name="newstype"><label for="html">HTML News</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="css" name="newstype"><label for="css">CSS News</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" id="javascript" name="newstype"><label for="javascript">Javascript News</label>
+          </div>
+        </div>
+
+        <label>Newsletter format</label>
+        <div class="form">
+          <div class="check">
+            <input type="radio" name="format"><label>HTML</label>
+          </div>
+          <div class="check omg">
+            <input type="radio" name="format"><label>Plain Text</label>
+          </div>
+        </div>
+
+        <label class="other">Other topics you'd like to hear about</label>
+        <textarea name="other"></textarea>
+
+        <input class="signup" type="button" name="signup" value="Sign Up">
+
+      </fieldset>
+    </form>
+
+    <footer>
+      <p>Copyright The Code Review</p>
+    </footer>
+  </body>
+</html>
