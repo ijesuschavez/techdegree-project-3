@@ -39,7 +39,7 @@ body {
 }
 
 textarea {
-  width: 100%;
+  width: 99%;
   height: 10em;
   background-color: #cfd1d1;
   border-radius: 10px;
@@ -153,13 +153,49 @@ footer {
 /* --------------- Styling --------------- */
 
 @media (min-width: 768px) {
-  header hr, form, footer, .intro {
+  .thor, form, footer, .intro {
     width: 70%;
     margin: auto;
   }
+
+  .intro {
+    margin-top: 2em;
+  }
+
   .hrtwo {
     margin-top: .5em;
   }
+  fieldset {
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+  }
+
+  .sec {
+    flex-direction: row;
+    margin-top: .5em;
+  }
+
+  .label {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    width: 20%;
+
+  }
+
+  .field {
+    display: flex;
+    flex-grow: 1;
+    width: 60%;
+  }
+
+  .sec:nth-of-type(7) {
+    margin-bottom: 1em;
+  }
+
+
 
 
 }
